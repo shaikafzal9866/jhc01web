@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    environment{
+        TOMCAT_IP = "172.16.4.90"
+        TOMCAT_USER="ec2-user"
+    }
+    stages{
+        stage("Deploy"){
+            steps{
+                echo "We are deploying to ${env.TOMCAT_IP} using user ${TOMCAT_USER}"
+            }
+        }
+    }
+}
+
