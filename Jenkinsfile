@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage("demo"){
-            step{
+            steps{
                 echo "Jenkinsfile demo"
             }
         }
